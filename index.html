@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Rock Mobile Chip Repair | Mobile Auto Glass Repair in Garretson & Sioux Falls</title>
+    <style>
+        :root {
+            --primary: #0056b3;
+            --primary-dark: #003d82;
+            --accent: #28a745;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            color: var(--dark);
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffffff;
+            border-bottom: 2px solid var(--light);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--dark);
+        }
+
+        .header-phone {
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #003d82 0%, #0056b3 100%);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.9rem 1.8rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #218838;
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: var(--primary-dark);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--light);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 1rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .feature-card {
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 0.5rem;
+            color: var(--primary-dark);
+        }
+
+        .pricing {
+            background-color: #ffffff;
+            border: 2px solid var(--light);
+            border-radius: 12px;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+
+        .pricing h2 {
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .price-card {
+            padding: 1.5rem;
+            background: var(--light);
+            border-radius: 8px;
+        }
+
+        .price-card .price {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin: 0.5rem 0;
+        }
+
+        .steps {
+            margin-bottom: 3rem;
+        }
+
+        .steps h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .step-card {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .step-num {
+            width: 45px;
+            height: 45px;
+            background-color: var(--primary);
+            color: white;
+            font-weight: 800;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem auto;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.75rem; }
+            .btn { width: 100%; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">Split Rock <span>Mobile Glass</span></div>
+            <a href="tel:6059402906" class="header-phone">📞 (605) 940-2906</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Mobile Windshield Chip Repair Delivered to Your Driveway</h1>
+            <p>Don't let a small stone chip turn into a $1,000 windshield replacement. Fast, professional chip repair in Garretson, Sioux Falls, and surrounding communities.</p>
+            <div class="btn-group">
+                <a href="tel:6059402906" class="btn btn-primary">Call Now: (605) 940-2906</a>
+                <a href="sms:6059402906?body=Hi%20Split%20Rock%20Mobile!%20I'd%20like%20a%20quote%20on%20a%20chip%20repair." class="btn btn-secondary">Text Us For a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        
+        <section class="features">
+            <div class="feature-card">
+                <h3>🚗 We Come To You</h3>
+                <p>We perform full repairs at your home, office, or driveway across Garretson, Sioux Falls, Brandon, and Minnehaha County.</p>
+            </div>
+            <div class="feature-card">
+                <h3>⚙️ Professional Equipment</h3>
+                <p>Using commercial GlasWeld™ vacuum-injection systems to restore structural glass integrity and optics.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🛡️ Guaranteed Results</h3>
+                <p>Our high-grade optical resin stops cracks from spreading, restoring structural clarity and safety.</p>
+            </div>
+        </section>
+
+        <section class="steps">
+            <h2>3 Simple Steps to Fix Your Glass</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-num">1</div>
+                    <h3>Text a Photo</h3>
+                    <p>Snap a photo of the chip on your phone and text it over to us.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">2</div>
+                    <h3>Get an Instant Quote</h3>
+                    <p>We'll confirm if it can be repaired and give you an exact price.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">3</div>
+                    <h3>We Come & Fix It</h3>
+                    <p>We arrive at your vehicle and complete the repair in under 30 minutes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing">
+            <h2>Straightforward Pricing</h2>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Single Chip Repair</h3>
+                    <div class="price">$65</div>
+                    <p>Full mobile service included. Complete repair in 30 minutes.</p>
+                </div>
+                <div class="price-card">
+                    <h3>Additional Chips</h3>
+                    <div class="price">+$20</div>
+                    <p>Per additional chip fixed on the exact same windshield.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Split Rock Mobile Chip Repair | Serving Garretson, Sioux Falls & Surrounding Areas</p>
+    </footer>
+
+</body>
+</html>
