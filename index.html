@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Split Rock Mobile Chip Repair | $0 Out-of-Pocket Auto Glass Repair</title>
+    
+    <!-- Open Graph Meta Tags for iMessage / Social Sharing -->
+    <meta property="og:title" content="Split Rock Mobile Chip Repair | $0 Out-of-Pocket Auto Glass Repair">
+    <meta property="og:description" content="Mobile windshield chip repair brought straight to your driveway or workplace in Garretson, Brandon & Sioux Falls.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://splitrockchiprepair.com">
+
+    <!-- Local Business SEO Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutomotiveBusiness",
+      "name": "Split Rock Mobile Chip Repair",
+      "telephone": "605-940-2906",
+      "priceRange": "$$",
+      "areaServed": ["Garretson", "Brandon", "Sioux Falls", "Luverne", "Pipestone"],
+      "description": "Mobile windshield chip and crack repair using GlasWeld commercial vacuum-injection technology."
+    }
+    </script>
+
     <style>
         :root {
             --primary: #0052cc;
@@ -56,14 +76,29 @@
 
         .logo span { color: var(--dark); }
 
+        .nav-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .text-btn-nav {
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 0.8rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
         .call-btn-nav {
             background: var(--primary);
             color: white;
             text-decoration: none;
-            padding: 0.5rem 1rem;
+            padding: 0.5rem 0.8rem;
             border-radius: 20px;
             font-weight: 700;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
 
         .hero {
@@ -147,6 +182,22 @@
             max-width: 900px;
             margin: 0 auto;
             padding: 2.5rem 1rem;
+        }
+
+        .quick-contact-banner {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+            margin-bottom: 2.5rem;
+            box-shadow: var(--shadow);
+            border: 2px solid var(--accent);
+        }
+
+        .quick-contact-banner h2 {
+            color: var(--dark);
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
         }
 
         .insurance-banner {
@@ -267,11 +318,25 @@
             margin: 0.5rem 0;
         }
 
+        .floating-text-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--accent);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 999;
+        }
+
         footer {
             background-color: var(--dark);
             color: white;
             text-align: center;
-            padding: 2.5rem 1rem;
+            padding: 2.5rem 1rem 5rem 1rem;
             font-size: 0.9rem;
         }
 
@@ -283,7 +348,10 @@
     <header>
         <div class="nav-container">
             <div class="logo">Split Rock <span>Mobile Chip Repair</span></div>
-            <a href="tel:6059402906" class="call-btn-nav">📞 Call Now</a>
+            <div class="nav-actions">
+                <a href="sms:6059402906?body=Hi%20Split%20Rock%20Mobile!%20Here%20is%20a%20photo%20of%20my%20windshield%20chip:" class="text-btn-nav">💬 Text Us</a>
+                <a href="tel:6059402906" class="call-btn-nav">📞 Call</a>
+            </div>
         </div>
     </header>
 
@@ -303,6 +371,12 @@
     </section>
 
     <div class="container">
+
+        <div class="quick-contact-banner">
+            <h2>📲 Fast & Easy Quote via Text</h2>
+            <p>Have a chip? Snap a quick photo with your phone and text it to <strong>(605) 940-2906</strong>. We'll reply right away with a quick estimate or scheduling options!</p>
+            <a href="sms:6059402906?body=Hi%20Split%20Rock%20Mobile!%20Here%20is%20a%20photo%20of%20my%20windshield%20chip:" class="btn btn-action" style="display: inline-block; width: auto; margin-top: 1rem; padding: 0.7rem 1.5rem;">Send Text Photo Now</a>
+        </div>
 
         <div class="insurance-banner">
             <h2>🛡️ $0 Out-of-Pocket With Most Insurance</h2>
@@ -358,13 +432,16 @@
             <h2>Out-of-Pocket Rates</h2>
             <p>(If paying without insurance)</p>
             <div class="pricing-amount">$65</div>
-            <p><strong>Single Chip Repair</strong> (Complete mobile service call included)</p>
-            <p style="margin-top: 0.5rem; color: #6c757d;">+$20 for each additional chip on the same windshield</p>
+            <p><strong>First Chip Repair</strong> (Complete mobile service call included)</p>
+            <p style="margin-top: 0.5rem; color: #6c757d;">+$15 for each additional chip on the same windshield</p>
             <br>
             <a href="sms:6059402906?body=Hi%20Split%20Rock%20Mobile!%20I'd%20like%20to%20schedule%20a%20chip%20repair." class="btn btn-action" style="display: inline-block; width: auto; padding: 0.8rem 2rem;">Book Appointment Via Text</a>
         </div>
 
     </div>
+
+    <!-- Floating Quick Contact Button -->
+    <a href="sms:6059402906?body=Hi%20Split%20Rock%20Mobile!%20Here%20is%20a%20photo%20of%20my%20windshield%20chip:" class="floating-text-btn">💬 Text a Photo</a>
 
     <footer>
         <p>&copy; 2026 Split Rock Mobile Chip Repair | Garretson, SD</p>
@@ -372,17 +449,17 @@
     </footer>
 
     <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6a5ef7ac1a1df41d5c178a32/1ju1feuqv';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6a5ef7ac1a1df41d5c178a32/1ju1feuqv';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 </html>
